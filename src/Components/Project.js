@@ -1,10 +1,10 @@
 import { Col, Container, Tab, Row, Nav } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import React from 'react';
-import TrackVisibility from "react-on-screen";
 import studyBuddies from '../Assets/Img/SDLive.png';
 import videoGame from '../Assets/Img/Video-Game.png';
 import veggieApp from '../Assets/Img/Healthy Hub.png';
+import rightArrow from '../Assets/Img/icons8-arrow-right-100.png';
 
 export const Projects = () => {
 
@@ -12,22 +12,24 @@ export const Projects = () => {
         title: "Study Buddies",
         description: "Tutoring Web Application",
         imgUrl: studyBuddies,
+        repoUrl: "https://github.com/Baylor-SEII-Projects-Spring-2024/study-buddy-finder-group-1"
     }];
 
     const gameProject = [{
         title: "[Title Unannounced]",
         description: "Fantasy 2D RPG",
         imgUrl: videoGame,
+        repoUrl: "https://github.com/KyleThompson1/Platform-Game"
     }];
 
     const personalProject = [{
         title: "Healthy Hub",
         description: "Diet and Fitness App",
         imgUrl: veggieApp,
+        repoUrl: "https://github.com/KyleThompson1/HealthyHub"
     }];
 
     return (
-
         <section className='project' id='project'>
             <Container>
                 <Row>
@@ -58,44 +60,41 @@ export const Projects = () => {
                                 <Tab.Pane eventKey='first' className='tab-pane'>
                                     <Row className='justify-content-center'>
                                         {
-                                            studyBuddyProject.map((project, index) => {
-                                                return (
-                                                    <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                    />
-                                                )
-                                            })
+                                            studyBuddyProject.map((project, index) => (
+                                                <Col key={index} className="d-flex flex-column align-items-center">
+                                                    <ProjectCard {...project} />
+                                                    <a style={{ fontSize: 72}} href={project.repoUrl} target="_blank" rel="noopener noreferrer" 
+                                                    className='text-decoration-none text-white'>Repository <img src={rightArrow} alt="arrow icon" style={{ width: '80px', height: '80px' }}/> </a>
+                                                </Col>
+                                            ))
                                         }
                                     </Row>
                                 </Tab.Pane>
 
                                 <Tab.Pane eventKey='second' className='tab-pane'>
-                                    <Row className='justify-content-center'>
+                                <Row className='justify-content-center'>
                                         {
-                                            gameProject.map((project, index) => {
-                                                return (
-                                                    <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                    />
-                                                )
-                                            })
+                                            gameProject.map((project, index) => (
+                                                <Col key={index} className="d-flex flex-column align-items-center">
+                                                    <ProjectCard {...project} />
+                                                    <a style={{ fontSize: 72}} href={project.repoUrl} target="_blank" rel="noopener noreferrer" 
+                                                    className='text-decoration-none text-white'>Repository <img src={rightArrow} alt="arrow icon" style={{ width: '80px', height: '80px' }}/> </a>
+                                                </Col>
+                                            ))
                                         }
                                     </Row>
                                 </Tab.Pane>
 
                                 <Tab.Pane eventKey='third' className='tab-pane'>
-                                    <Row className='justify-content-center'>
+                                <Row className='justify-content-center'>
                                         {
-                                            personalProject.map((project, index) => {
-                                                return (
-                                                    <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                    />
-                                                )
-                                            })
+                                            personalProject.map((project, index) => (
+                                                <Col key={index} className="d-flex flex-column align-items-center">
+                                                    <ProjectCard {...project} />
+                                                    <a style={{ fontSize: 72}} href={project.repoUrl} target="_blank" rel="noopener noreferrer" 
+                                                    className='text-decoration-none text-white'>Repository <img src={rightArrow} alt="arrow icon" style={{ width: '80px', height: '80px' }}/> </a>
+                                                </Col>
+                                            ))
                                         }
                                     </Row>
                                 </Tab.Pane>

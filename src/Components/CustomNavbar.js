@@ -59,10 +59,10 @@ export const CustomNavbar = () => {
                         <Nav.Link href='#project' className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>My Projects</Nav.Link>
                     </Nav>
                     <span className="navbar-text">
-                        <button className='vvd rounded-button' onClick={handleDownload}>
+                        <button style={{ borderRadius: '10px'}} onClick={handleDownload}>
                             <span>R&eacute;sum&eacute;</span>
                         </button>
-                        <button className='vvd rounded-button' onClick={handleConnectClick}>
+                        <button style={{ borderRadius: '10px' }} onClick={handleConnectClick}>
                             <span>Contact Me</span>
                         </button>
                     </span>

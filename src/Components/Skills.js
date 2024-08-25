@@ -41,12 +41,12 @@ export const Skills = () => {
                     <Row>
                         <Col>
                             <p className='text-center'>
-                            As a Computer Science major, I've
+                            As a computer science major, I've
                             gained a foundation in programming, 
                             data structures, software engineering, computer systems, 
                             algorithms, and database design. My experience includes developing
                             web applications, working with various databases, 
-                            and collaborating in Agile environments. I am proficient in
+                            and collaborating on projects in Agile environments. I am proficient in
                             version control (Git and GitHub) and have 
                             experience with build automation tools like Maven and 
                             Gradle. I love technology and 

@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import linkedIn from '../Assets/Img/nav-icon1.svg'
 import github from '../Assets/Img/Github Icon.png'
+import leetcode from '../Assets/Img/icons8-leetcode-512.png'
 
 export const Footer = () => {
 
@@ -12,6 +13,7 @@ export const Footer = () => {
                         <div className='social-icon'>
                             <a href='https://github.com/KyleThompson1'><img src={github} /></a>
                             <a href='https://www.linkedin.com/in/kyle-thompson1/'><img src={linkedIn} /></a>
+                            <a href='https://leetcode.com/u/Muffinsncake/'><img src={leetcode} /></a>
                         </div>
                         <p> Disclaimer: The content and opinions expressed on this website are my own 
                             and do not reflect the views of any organization or employer I may be 

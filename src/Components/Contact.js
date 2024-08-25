@@ -66,7 +66,7 @@ export const Contact = () => {
                         <img src={connectImg} alt='Contact Us' />
                     </Col>
                     <Col md={6}>
-                        <h2 className='center-text'>Let's Connect!</h2>
+                        <h2 className='center-text' style={{ fontSize: '72px' }}>Let's Connect!</h2>
                         <form onSubmit={handleSubmit}>
                             <Col>
                                 <Row className='px-1'>
@@ -84,8 +84,8 @@ export const Contact = () => {
                                 <Row className='px-1'>
                                     <textarea rows='6' value={formDetails.message} placeholder='Message' onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                                 </Row>
-                                <Row className='px-1'>
-                                    <button type='submit' className='center-button rounded-button-contact'><span>{buttonText}</span></button>
+                                <Row className='px-1 justify-content-center'>
+                                    <button type='submit' style={{ width: '200px' }} ><span>{buttonText}</span></button>
                                 </Row>
                                 {
                                     status.message &&
