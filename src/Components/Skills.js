@@ -10,6 +10,8 @@ import css from '../Assets/Img/icons8-css-500.png';
 import html from '../Assets/Img/icons8-html-5-480.png';
 import js from '../Assets/Img/icons8-javascript-480.png';
 import ts from '../Assets/Img/icons8-typescript-384.png';
+import pythonIcon from '../Assets/Img/icons8-python-480.png';
+import cIcon from '../Assets/Img/icons8-c-programming-480.png';
 
 export const Skills = () => {
 
@@ -56,38 +58,49 @@ export const Skills = () => {
                             <h2>Programming Languages</h2>
                             <p>I have experience with several popular programming languages, ranging from C++ to HTML.</p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider'>
+
                                 <div className='item'>
-                                    <img src={cPlusPlusIcon} alt='Image' />
+                                    <img src={cIcon} alt='Image'/>
+                                    <h5>C</h5>
+                                </div>
+
+                                <div className='item'>
+                                    <img src={cPlusPlusIcon} alt='Image'/>
                                     <h5>C++</h5>
                                 </div>
 
                                 <div className='item'>
-                                    <img src={javaIcon} alt='Image' />
+                                    <img src={javaIcon} alt='Image'/>
                                     <h5>Java</h5>
                                 </div>
 
                                 <div className='item'>
-                                    <img src={sqlIcon} alt='Image' />
+                                    <img src={pythonIcon} alt='Image'/>
+                                    <h5>Python</h5>
+                                </div>
+
+                                <div className='item'>
+                                    <img src={sqlIcon} alt='Image'/>
                                     <h5>SQL</h5>
                                 </div>
 
                                 <div className='item'>
-                                    <img src={html} alt='Image' />
+                                    <img src={html} alt='Image'/>
                                     <h5>HTML</h5>
                                 </div>
 
                                 <div className='item'>
-                                    <img src={css} alt='Image' />
+                                    <img src={css} alt='Image'/>
                                     <h5>CSS</h5>
                                 </div>
 
                                 <div className='item'>
-                                    <img src={js} alt='Image' />
+                                    <img src={js} alt='Image'/>
                                     <h5>JavaScript</h5>
                                 </div>
 
                                 <div className='item'>
-                                    <img src={ts} alt='Image' />
+                                    <img src={ts} alt='Image'/>
                                     <h5>TypeScript</h5>
                                 </div>
                             </Carousel>
@@ -98,7 +111,7 @@ export const Skills = () => {
                 <section className='skill' id='skills'>
                     <Container>
                         <Row>
-                            <Col>
+                        <Col>
                                 <h2>
                                     Frameworks
                                 </h2>
