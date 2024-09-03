@@ -56,7 +56,7 @@ export const Skills = () => {
                             the latest advancements.
                             </p>
                             <h2>Programming Languages</h2>
-                            <p>I have experience with several popular programming languages, ranging from C++ to HTML.</p>
+                            <p>I have experience with several popular programming languages, ranging from C to HTML.</p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider'>
 
                                 <div className='item'>
