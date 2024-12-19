@@ -12,6 +12,7 @@ import js from '../Assets/Img/icons8-javascript-480.png';
 import ts from '../Assets/Img/icons8-typescript-384.png';
 import pythonIcon from '../Assets/Img/icons8-python-480.png';
 import cIcon from '../Assets/Img/icons8-c-programming-480.png';
+import flask from '../Assets/Img/icons8-flask-500.png';
 
 export const Skills = () => {
 
@@ -46,7 +47,7 @@ export const Skills = () => {
                             As a computer science major, I've
                             gained a foundation in programming, 
                             data structures, software engineering, computer systems, 
-                            algorithms, and database design. My experience includes developing
+                            algorithms, database design, and systems programming. My experience includes developing
                             web applications, working with various databases, 
                             and collaborating on projects in Agile environments. I am proficient in
                             version control (Git and GitHub) and have 
@@ -115,24 +116,29 @@ export const Skills = () => {
                                 <h2>
                                     Frameworks
                                 </h2>
-                                <p> I am familiar with both frontend and backend development utilizing React 
-                                    and Spring Boot frameworks. This enables me to develop full-stack
+                                <p> I am familiar with both frontend and backend development utilizing React,
+                                    Spring Boot, and Flask frameworks. This enables me to develop full-stack
                                     applications from start to finish. Additionally, I have a good 
                                     understanding of the software development lifecycle including requirements 
                                     analyis, system design, implementation, testing, and deployment.</p>
-                                <Carousel responsive={responsive} infinite={true} className='skill-slider'>
+                            <Carousel responsive={responsive} infinite={true} className='skill-slider'>
 
-                                    <div className='item'>
-                                        <img src={reactIcon} alt='Image' />
-                                        <h5>React</h5>
-                                    </div>
+                                <div className='item'>
+                                    <img src={reactIcon} alt='Image'/>
+                                    <h5>React</h5>
+                                </div>
 
-                                    <div className='item'>
-                                        <img src={springBoot} alt='Image' />
-                                        <h5>Spring Boot</h5>
-                                    </div>
-                                </Carousel>
-                            </Col>
+                                <div className='item'>
+                                    <img src={springBoot} alt='Image'/>
+                                    <h5>Spring Boot</h5>
+                                </div>
+
+                                <div className='item'>
+                                    <img src={flask} alt='Image'/>
+                                    <h5>Flask</h5>
+                                </div>
+                            </Carousel>
+                        </Col>
                         </Row>
                     </Container>
                 </section>
