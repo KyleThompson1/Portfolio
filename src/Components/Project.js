@@ -4,6 +4,7 @@ import React from 'react';
 import studyBuddies from '../Assets/Img/SDLive.png';
 import videoGame from '../Assets/Img/Video-Game.png';
 import veggieApp from '../Assets/Img/Healthy Hub.png';
+import tigersDB from '../Assets/Img/Tigers DB.png';
 import rightArrow from '../Assets/Img/icons8-arrow-right-100.png';
 
 export const Projects = () => {
@@ -29,6 +30,13 @@ export const Projects = () => {
         repoUrl: "https://github.com/KyleThompson1/HealthyHub"
     }];
 
+    const DBProject = [{
+        title: "Tiger Database",
+        description: "Database Web Application",
+        imgUrl: tigersDB,
+        repoUrl: "https://github.com/KyleThompson1/Tigers"
+    }];
+
     return (
         <section className='project' id='project'>
             <Container>
@@ -52,6 +60,11 @@ export const Projects = () => {
                                     <Col className="d-flex justify-content-center">
                                         <Nav.Item className='navbar-text btn mb-3 btn-custom-outline'>
                                             <Nav.Link eventKey='third'>Healthy Hub (Solo)</Nav.Link>
+                                        </Nav.Item>
+                                    </Col>
+                                    <Col className="d-flex justify-content-center">
+                                        <Nav.Item className='navbar-text btn mb-3 btn-custom-outline'>
+                                            <Nav.Link eventKey='fourth'>Tiger Database (Team)</Nav.Link>
                                         </Nav.Item>
                                     </Col>
                                 </Row>
@@ -98,6 +111,22 @@ export const Projects = () => {
                                         }
                                     </Row>
                                 </Tab.Pane>
+
+                                <Tab.Pane eventKey='fourth' className='tab-pane'>
+                                    <Row className='justify-content-center'>
+                                        {
+                                            DBProject.map((project, index) => (
+                                                <Col key={index} className="d-flex flex-column align-items-center">
+                                                    <ProjectCard {...project} />
+                                                    <a style={{ fontSize: 72}} href={project.repoUrl} target="_blank" rel="noopener noreferrer"
+                                                       className='text-decoration-none text-white'>Repository <img src={rightArrow} alt="arrow icon" style={{ width: '80px', height: '80px' }}/> </a>
+                                                </Col>
+                                            ))
+                                        }
+                                    </Row>
+                                </Tab.Pane>
+
+
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
