@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { useState } from 'react';
 import TrackVisibility from 'react-on-screen';
-import kylePic from '../Assets/Img/K & A-2.jpg';
+import kylePic from '../Assets/Img/Me and Walls.jpeg';
 import Typical from 'react-typical';
 
 export const Banner = (() => {
@@ -18,10 +18,9 @@ export const Banner = (() => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? 'animate_animated animate__fadeIn' : ''}>
                                     <h1>{`Hi, I'm Kyle Thompson`}<span className='wrap'>{text}</span></h1>
-                                    <p> I'm a U.S. Army veteran and computer
-                                        science student at Baylor University with a passion for software
-                                        engineering, game development, and UI/UX design. That's me on the right, 
-                                        alongside my wife, Ashley. Welcome to my portfolio, where
+                                    <p> I'm a U.S. Army veteran 💥🪖 and computer
+                                        science student 💻 at Baylor University 🟢🟡🐻 with a passion for software
+                                        engineering, game development, and UI/UX design. Welcome to my portfolio, where
                                         you'll see the projects and skills that showcase my path in the tech
                                         world. Let's build something amazing together!</p>
                                 </div>}
