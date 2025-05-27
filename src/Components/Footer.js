@@ -19,7 +19,7 @@ export const Footer = () => {
                             and do not reflect the views of any organization or employer I may be 
                             affiliated with. All projects are for educational purposes. 
                             While I strive for accuracy, errors may be present. Links to external websites 
-                            are provided for convenience and do not imply endorsement. © Kyle Thompson, 2024. 
+                            are provided for convenience and do not imply endorsement. © Kyle Thompson, 2025.
                             All rights reserved.
                         </p>
                     </Col>
