@@ -19,7 +19,7 @@ export const Banner = (() => {
                                 <div className={isVisible ? 'animate_animated animate__fadeIn' : ''}>
                                     <h1>{`Hi, I'm Kyle Thompson`}<span className='wrap'>{text}</span></h1>
                                     <p> I'm a U.S. Army veteran 💥🪖 and computer
-                                        science student 💻 at Baylor University 🟢🟡🐻 with a passion for software
+                                        science student 💻🧠 at Baylor University 🟢🟡🐻 with a passion for software
                                         engineering, game development, and UI/UX design. Welcome to my portfolio, where
                                         you'll see the projects and skills that showcase my path in the tech
                                         world. Let's build something amazing together!</p>
